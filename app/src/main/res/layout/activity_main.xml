@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81ecec"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ask_Button"
+        android:layout_width="236dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="1200px"
+        android:background="@android:color/holo_blue_dark"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:text="Ask"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="413dp"
+        android:layout_height="61dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center|center_horizontal"
+        android:paddingLeft="80px"
+        android:text="   Make everyday decisions easier"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <ImageView
+        android:id="@+id/image_Ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_message"
+        app:srcCompat="@drawable/ball1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
